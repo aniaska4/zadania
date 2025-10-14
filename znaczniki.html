@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O mnie – Mini Projekt HTML</title>
+</head>
+<body>
+
+  <!-- Nagłówek strony -->
+  <header>
+    <h1>Jan Kowalski</h1>
+    <nav>
+      <a href="#about">O mnie</a> |
+      <a href="#skills">Umiejętności</a> |
+      <a href="#contact">Kontakt</a>
+    </nav>
+    <hr>
+  </header>
+
+  <!-- Główna treść -->
+  <main>
+    <!-- Sekcja: O mnie -->
+    <section id="about">
+      <h2>👋 O mnie</h2>
+      <img src="https://via.placeholder.com/150" alt="Moje zdjęcie" width="150">
+      <p>Cześć! Nazywam się Jan Kowalski. Jestem początkującym front-end developerem z pasją do tworzenia nowoczesnych i responsywnych stron internetowych.</p>
+    </section>
+
+    <!-- Sekcja: Umiejętności -->
+    <section id="skills">
+      <h2>🛠️ Umiejętności</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (podstawy)</li>
+        <li>Git i GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Sekcja: Kontakt -->
+    <section id="contact">
+      <h2>📬 Kontakt</h2>
+      <form>
+        <p>
+          <label for="name">Imię:</label><br>
+          <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="message">Wiadomość:</label><br>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </p>
+        <button type="submit">Wyślij</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Stopka -->
+  <footer>
+    <hr>
+    <p>&copy; 2025 Jan Kowalski | <a href="mailto:jan@example.com">jan@example.com</a></p>
+  </footer>
+
+</body>
+</html>
