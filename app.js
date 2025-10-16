@@ -64,11 +64,11 @@ function arrayToString(arr){
 
 console.log('arrayToString', arrayToString(["Hello", "world"] ));
 
-// function toUpperCaseArray(arr){
-//   return arr.split('').toUpperCase().join('')
-// }
+function toUpperCaseArray(arr){
+  return arr.split('').toUpperCase().join('')
+}
 
-// toUpperCaseArray(["a", "b", "c"]);
+toUpperCaseArray(["a", "b", "c"]);
 
 function wordLengths(arr) {
   return arr.map(el => el.length)
