@@ -57,3 +57,52 @@ function removeElement(arr, el) {
 console.log('removeElement', removeElement([1, 2, 3, 2], 2));
 
 console.log(Math.max(...[1, 2, 3, 2, 4 , 20]));
+
+function arrayToString(arr){
+  return arr.join(' ');
+}
+
+console.log('arrayToString', arrayToString(["Hello", "world"] ));
+
+function toUpperCaseArray(arr){
+  return arr.split('').toUpperCase().join('')
+}
+
+toUpperCaseArray(["a", "b", "c"]);
+
+function wordLengths(arr) {
+  return arr.map(el => el.length)
+}
+
+console.log('wordLengths', wordLengths(["kot", "pies"]))
+
+function reverseArray(arr) {
+  return arr.reverse();
+}
+
+console.log('reverseArray', reverseArray([1, 2, 3]))
+
+function filterStrings(arr) {
+  return arr.filter(el => typeof el === 'string')
+}
+
+console.log('filterStrings', filterStrings([1, "kot", true, "pies"]))
+
+function prefixStrings(arr, prefix) {
+  return arr.map(el => `${prefix}${el}`)
+}
+
+
+console.log('prefixStrings', prefixStrings(["dom", "auto"], 'super-'));
+
+function sumArray(arr) {
+  arr.reduce((total, el) => total + el, 0)
+}
+
+[1, 2, 3] 
+
+//stan początkowy: 0
+
+// 1 iteracja total 0 + 1 => 1
+// 2 iteracja total 1 + 2 => 3
+// 3 iteracja total 3 + 3 => 6
